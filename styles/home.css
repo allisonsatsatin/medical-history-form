@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  line-height: 2;
+  padding: 20px;
+}
+
+.banner {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.banner h1 {
+  font-size: 28px;
+
+}
+
+
+.record {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgb(221, 223, 224);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.record h2 {
+  font-size: 22px;
+  margin: 20px 0 10px;
+
+  padding-bottom: 5px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .banner h1 {
+    font-size: 24px;
+  }
+
+  .dashboard {
+    padding: 15px;
+  }
+
+  .dashboard h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner h1 {
+    font-size: 20px;
+  }
+
+  .dashboard {
+    padding: 10px;
+  }
+
+  .dashboard h2 {
+    font-size: 18px;
+  }
+
+  .dashboard-card {
+    padding: 10px;
+  }
+
+  .dashboard-card p {
+    font-size: 14px;
+  }
+}
