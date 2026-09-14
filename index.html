@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+
+    <title>Medical History Form</title>
+</head>
+
+<body>
+
+  
+    <div class="banner">
+        <h1>Medical History Form</h1>
+    </div>
+
+
+  
+    <form class="main-container" method="POST" action="home.html">
+
+     
+        <div class="header">
+            <img src="icon.png" alt="Medical icon">
+
+            <p class="pdetails">PATIENT DETAILS</p>
+
+            <p class="description">Record of a patient's medical details</p>
+        </div>
+
+
+    
+        <div class="input-fields">
+
+            <div class="field">
+                <label for="fname">First Name:</label>
+                <input class="input-area" type="text" id="fname" name="fname" required placeholder="Enter your first name">
+                
+            </div>
+
+
+            <div class="field">
+                <label for="lname">Last Name:</label>
+                <input class="input-area" type="text" id="lname" name="lname" required placeholder="Enter your last name" >
+            </div>
+
+
+            <div class="field">
+                <label for="age">Age:</label>
+                <input
+                    class="input-area"
+                    type="number"
+                    id="age"
+                    name="age"
+                    required
+                    placeholder="Enter your age"
+                >
+            </div>
+
+
+            <div class="field">
+                <label for="birthdate">Birthdate:</label>
+                <input
+                    class="input-area"
+                    type="date"
+                    id="birthdate"
+                    name="birthdate"
+                    required
+                >
+            </div>
+
+
+            <div class="field">
+                <label>Gender:</label>
+
+                <div class="radio-group">
+                    <div>
+                        <input
+                            class="input-area"
+                            type="radio"
+                            id="male"
+                            name="gender"
+                            value="male"
+                        >
+                        <label for="male">Male</label>
+                    </div>
+
+                    <div>
+                        <input
+                            class="input-area"
+                            type="radio"
+                            id="female"
+                            name="gender"
+                            value="female"
+                        >
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="field">
+                <label for="status">Marital Status:</label>
+
+                <select class="input-area" id="status" name="status">
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="separated">Separated</option>
+                    <option value="divorced">Divorced</option>
+                    <option value="widowed">Widowed</option>
+                </select>
+            </div>
+
+
+            <div class="field">
+                <label for="contact">Contact No.:</label>
+
+                <input
+                    class="input-area"
+                    type="text" id="contact" name="contact" required placeholder="Enter your number"
+                >
+            </div>
+
+
+            <div class="field">
+                <label for="email">Email:</label>
+
+                <input
+                    class="input-area"
+                    type="email" id="email" name="email" required placeholder="Enter your email"
+                >
+            </div>
+
+        </div>
+
+        <div class="conditions">
+
+            <p>
+                Check the conditions that apply to you or any member of your immediate relatives
+            </p>
+
+
+            <div class="checkbox-field">
+                <input
+
+                    type="checkbox" id="asthma" name="conditions" value="asthma"
+                >
+                <label for="asthma">Asthma</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+                 
+                    type="checkbox"
+                    id="cardiac-condition"
+                    name="conditions"
+                    value="cardiac-disease"
+                >
+                <label for="cardiac-condition">Cardiac disease</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+            
+                    type="checkbox"
+                    id="hypertension"
+                    name="conditions"
+                    value="hypertension"
+                >
+                <label for="hypertension">Hypertension</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+               
+                    type="checkbox"
+                    id="epilepsy"
+                    name="conditions"
+                    value="epilepsy"
+                >
+                <label for="epilepsy">Epilepsy</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+                 
+                    type="checkbox"
+                    id="cancer"
+                    name="conditions"
+                    value="cancer"
+                >
+                <label for="cancer">Cancer</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+                 
+                    type="checkbox"
+                    id="diabetes"
+                    name="conditions"
+                    value="diabetes"
+                >
+                <label for="diabetes">Diabetes</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+                 
+                    type="checkbox"
+                    id="psychiatric-disorder"
+                    name="conditions"
+                    value="psychiatric-disorder"
+                >
+                <label for="psychiatric-disorder">
+                    Psychiatric disorder
+                </label>
+            </div>
+
+
+            <div class="others-field">
+                <label for="condition-others">Others:</label>
+
+                <textarea
+                  
+                    name="condition_others"
+                    id="condition-others"
+                    rows="2"
+                ></textarea>
+            </div>
+
+        </div>
+
+
+        <div class="symptoms">
+
+            <p>
+                Check the symptoms that you're currently experiencing
+            </p>
+
+
+            <div class="checkbox-field">
+                <input
+                
+                    type="checkbox"
+                    id="chest-pain"
+                    name="symptoms"
+                    value="chest-pain"
+                >
+                <label for="chest-pain">Chest pain</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+                   
+                    type="checkbox"
+                    id="respiratory"
+                    name="symptoms"
+                    value="respiratory"
+                >
+                <label for="respiratory">Respiratory</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+             
+                    type="checkbox"
+                    id="cardiac-symptom"
+                    name="symptoms"
+                    value="cardiac-disease"
+                >
+                <label for="cardiac-symptom">Cardiac disease</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+                  
+                    type="checkbox"
+                    id="cardiovascular"
+                    name="symptoms"
+                    value="cardiovascular"
+                >
+                <label for="cardiovascular">Cardiovascular</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+                 
+                    type="checkbox"
+                    id="hematological"
+                    name="symptoms"
+                    value="hematological"
+                >
+                <label for="hematological">Hematological</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+             
+                    type="checkbox"
+                    id="lymphatic"
+                    name="symptoms"
+                    value="lymphatic"
+                >
+                <label for="lymphatic">Lymphatic</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+                  
+                    type="checkbox"
+                    id="neurological"
+                    name="symptoms"
+                    value="neurological"
+                >
+                <label for="neurological">Neurological</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+                
+                    type="checkbox"
+                    id="psychiatric"
+                    name="symptoms"
+                    value="psychiatric"
+                >
+                <label for="psychiatric">Psychiatric</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+                   
+                    type="checkbox"
+                    id="gastrointestinal"
+                    name="symptoms"
+                    value="gastrointestinal"
+                >
+                <label for="gastrointestinal">Gastrointestinal</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+                
+                    type="checkbox"
+                    id="genitourinary"
+                    name="symptoms"
+                    value="genitourinary"
+                >
+                <label for="genitourinary">Genitourinary</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+              
+                    type="checkbox"
+                    id="weight-gain"
+                    name="symptoms"
+                    value="weight-gain"
+                >
+                <label for="weight-gain">Weight gain</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+               
+                    type="checkbox"
+                    id="weight-loss"
+                    name="symptoms"
+                    value="weight-loss"
+                >
+                <label for="weight-loss">Weight loss</label>
+            </div>
+
+
+            <div class="checkbox-field">
+                <input
+              
+                    type="checkbox"
+                    id="musculoskeletal"
+                    name="symptoms"
+                    value="musculoskeletal"
+                >
+                <label for="musculoskeletal">Musculoskeletal</label>
+            </div>
+
+
+            <div class="others-field">
+                <label for="symptom-others">Others:</label>
+
+                <textarea
+             
+                    name="symptom_others"
+                    id="symptom-others"
+                    rows="2"
+                ></textarea>
+            </div>
+
+        </div>
+
+
+
+        <div class="button-group">
+
+            <input
+                type="reset"
+                class="button reset-button"
+                value="CLEAR"
+            >
+
+            <input
+                type="submit"
+                class="button submit-button"
+                value="SUBMIT"
+            >
+
+        </div>
+
+    </form>
+
+</body>
+</html>
